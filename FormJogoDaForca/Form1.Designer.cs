@@ -47,6 +47,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(txtBoneco);
             panel1.Location = new Point(30, 118);
             panel1.Name = "panel1";
@@ -56,7 +57,6 @@
             // txtBoneco
             // 
             txtBoneco.BackColor = SystemColors.Info;
-            txtBoneco.Enabled = false;
             txtBoneco.Location = new Point(0, 3);
             txtBoneco.Name = "txtBoneco";
             txtBoneco.Size = new Size(272, 210);
@@ -65,19 +65,21 @@
             // 
             // panel2
             // 
+            panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(lbForca);
             panel2.Controls.Add(txtMensagem);
-            panel2.Location = new Point(30, 12);
+            panel2.Location = new Point(156, 12);
             panel2.Name = "panel2";
-            panel2.Size = new Size(583, 61);
+            panel2.Size = new Size(351, 61);
             panel2.TabIndex = 1;
             // 
             // lbForca
             // 
             lbForca.AutoSize = true;
-            lbForca.Location = new Point(234, 0);
+            lbForca.Font = new Font("Script MT Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbForca.Location = new Point(124, -3);
             lbForca.Name = "lbForca";
-            lbForca.Size = new Size(93, 15);
+            lbForca.Size = new Size(117, 19);
             lbForca.TabIndex = 3;
             lbForca.Text = "Adivinhe a Fruta";
             // 
@@ -88,11 +90,12 @@
             txtMensagem.Enabled = false;
             txtMensagem.Location = new Point(0, 38);
             txtMensagem.Name = "txtMensagem";
-            txtMensagem.Size = new Size(583, 23);
+            txtMensagem.Size = new Size(351, 23);
             txtMensagem.TabIndex = 0;
             // 
             // panel3
             // 
+            panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(txtLetra);
             panel3.Controls.Add(btnPalpite);
             panel3.Location = new Point(414, 206);
@@ -111,31 +114,35 @@
             // 
             // btnPalpite
             // 
+            btnPalpite.BackColor = Color.WhiteSmoke;
             btnPalpite.Dock = DockStyle.Bottom;
             btnPalpite.Location = new Point(0, 45);
             btnPalpite.Name = "btnPalpite";
             btnPalpite.Size = new Size(102, 23);
             btnPalpite.TabIndex = 0;
             btnPalpite.Text = "Palpite";
-            btnPalpite.UseVisualStyleBackColor = true;
+            btnPalpite.UseVisualStyleBackColor = false;
             btnPalpite.Click += btnPalpite_Click;
             // 
             // btnResetar
             // 
+            btnResetar.BackColor = Color.WhiteSmoke;
             btnResetar.Location = new Point(414, 308);
             btnResetar.Name = "btnResetar";
             btnResetar.Size = new Size(102, 23);
             btnResetar.TabIndex = 1;
             btnResetar.Text = "Resetar";
-            btnResetar.UseVisualStyleBackColor = true;
+            btnResetar.UseVisualStyleBackColor = false;
             btnResetar.Click += btnResetar_Click;
             // 
             // lbPalavra
             // 
             lbPalavra.AutoSize = true;
-            lbPalavra.Location = new Point(442, 87);
+            lbPalavra.BackColor = Color.Transparent;
+            lbPalavra.Font = new Font("Script MT Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbPalavra.Location = new Point(432, 87);
             lbPalavra.Name = "lbPalavra";
-            lbPalavra.Size = new Size(45, 15);
+            lbPalavra.Size = new Size(62, 19);
             lbPalavra.TabIndex = 2;
             lbPalavra.Text = "Palavra";
             // 
@@ -151,9 +158,11 @@
             // lbTentativas
             // 
             lbTentativas.AutoSize = true;
+            lbTentativas.BackColor = Color.Transparent;
+            lbTentativas.Font = new Font("Script MT Bold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbTentativas.Location = new Point(70, 87);
             lbTentativas.Name = "lbTentativas";
-            lbTentativas.Size = new Size(59, 15);
+            lbTentativas.Size = new Size(75, 19);
             lbTentativas.TabIndex = 4;
             lbTentativas.Text = "Tentativas";
             // 
@@ -162,6 +171,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
+            BackgroundImage = Properties.Resources.background;
             ClientSize = new Size(625, 360);
             Controls.Add(lbTentativas);
             Controls.Add(txtPalavra);
